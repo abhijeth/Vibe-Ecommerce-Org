@@ -281,26 +281,6 @@ curl "http://localhost:10001/admin/insecure"
 - [OWASP Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 - [Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
 
-## 🤝 **Contributing**
-
-### 🐛 **Reporting Issues**
-- Use GitHub Issues for bug reports
-- Provide detailed reproduction steps
-- Include expected vs actual behavior
-- Specify which version you're testing
-
-### 🔧 **Adding Vulnerabilities**
-1. Fork the repository
-2. Add new vulnerable functionality
-3. Document the vulnerability
-4. Create exploitation examples
-5. Submit a pull request
-
-### 📝 **Improving Documentation**
-- Enhance README files
-- Add more exploitation examples
-- Improve troubleshooting guides
-- Create video tutorials
 
 ## ⚖️ **Legal and Ethical Use**
 
