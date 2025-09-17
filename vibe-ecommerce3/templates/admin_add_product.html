@@ -1,0 +1,30 @@
+{{define "content"}}
+<div class="admin-container">
+    <h2>Add New Product</h2>
+    {{if .Error}}
+        <div class="error">{{.Error}}</div>
+    {{end}}
+    
+    <form method="POST" action="/admin/products/add" class="product-form">
+        <div class="form-group">
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="image_url">Image URL (optional):</label>
+            <input type="url" id="image_url" name="image_url">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+    
+    <a href="/admin/products" class="btn btn-secondary">Back to Products</a>
+</div>
+{{end}} 

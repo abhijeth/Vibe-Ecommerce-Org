@@ -1,0 +1,42 @@
+{{define "content"}}
+<div class="admin-container">
+    <h2>Payment Information (Educational Purposes Only)</h2>
+    <div class="warning">
+        <strong>⚠️ SECURITY WARNING:</strong> This page displays sensitive payment information for educational purposes only. 
+        In a real application, this would be a severe security vulnerability.
+    </div>
+    
+    <div class="payments-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Card Number</th>
+                    <th>Card Holder</th>
+                    <th>Expiry</th>
+                    <th>CVV</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .Payments}}
+                <tr>
+                    <td>{{.OrderID}}</td>
+                    <td>{{.UserEmail}}</td>
+                    <td>{{.CardNumber}}</td>
+                    <td>{{.CardHolderName}}</td>
+                    <td>{{.ExpirationMonth}}/{{.ExpirationYear}}</td>
+                    <td>{{.CVV}}</td>
+                    <td>${{printf "%.2f" .Total}}</td>
+                    <td>{{.PaymentDate}}</td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </div>
+    
+    <a href="/owner" class="btn btn-secondary">Back to Owner Dashboard</a>
+</div>
+{{end}} 

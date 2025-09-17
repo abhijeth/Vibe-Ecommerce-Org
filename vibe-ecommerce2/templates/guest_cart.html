@@ -1,0 +1,30 @@
+{{define "content"}}
+<div class="cart-container">
+    <h2>Shopping Cart</h2>
+    
+    <div class="guest-message">
+        <h3>Welcome Guest!</h3>
+        <p>To add items to your cart and complete purchases, please login or register.</p>
+        
+        <div class="guest-actions">
+            <a href="/login" class="btn btn-primary">Login</a>
+            <a href="/register" class="btn btn-secondary">Register</a>
+        </div>
+        
+        <p><small>You can browse products without logging in, but you'll need an account to make purchases.</small></p>
+    </div>
+    
+    <div class="guest-features">
+        <h3>What you can do as a guest:</h3>
+        <ul>
+            <li>✅ Browse all products</li>
+            <li>✅ View product details</li>
+            <li>✅ See product prices</li>
+            <li>❌ Add items to cart (requires login)</li>
+            <li>❌ Complete purchases (requires login)</li>
+        </ul>
+    </div>
+    
+    <a href="/products" class="btn btn-secondary">Continue Shopping</a>
+</div>
+{{end}} 

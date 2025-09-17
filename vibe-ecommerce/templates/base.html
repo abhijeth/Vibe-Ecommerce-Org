@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}} - Vibe E-commerce</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Vibe Shop</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/products" class="nav-link">Products</a></li>
+                {{if .UserID}}
+                    <li><a href="/cart" class="nav-link">Cart</a></li>
+                    <li><a href="/orders" class="nav-link">Orders</a></li>
+                    {{if .IsAdmin}}
+                        <li><a href="/admin" class="nav-link">Admin</a></li>
+                    {{end}}
+                    {{if .IsOwner}}
+                        <li><a href="/owner" class="nav-link">Owner</a></li>
+                    {{end}}
+                    <li><a href="/logout" class="nav-link">Logout</a></li>
+                {{else}}
+                    <li><a href="/login" class="nav-link">Login</a></li>
+                    <li><a href="/register" class="nav-link">Register</a></li>
+                {{end}}
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        {{template "content" .}}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vibe E-commerce. Educational purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html> 

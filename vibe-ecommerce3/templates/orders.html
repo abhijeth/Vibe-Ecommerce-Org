@@ -1,0 +1,24 @@
+{{define "content"}}
+<div class="orders-container">
+    <h2>My Orders</h2>
+    {{if .Orders}}
+        <div class="orders-list">
+            {{range .Orders}}
+            <div class="order-card">
+                <div class="order-header">
+                    <h3>Order #{{.ID}}</h3>
+                    <span class="order-date">{{.CreatedAt.Format "Jan 02, 2006 15:04"}}</span>
+                </div>
+                <div class="order-details">
+                    <p><strong>Total:</strong> ${{printf "%.2f" .Total}}</p>
+                    <p><strong>Status:</strong> Completed</p>
+                </div>
+                <a href="/order/{{.ID}}" class="btn btn-secondary">View Details</a>
+            </div>
+            {{end}}
+        </div>
+    {{else}}
+        <p>No orders found. <a href="/products">Start shopping</a></p>
+    {{end}}
+</div>
+{{end}} 

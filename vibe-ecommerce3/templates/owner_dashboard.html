@@ -1,0 +1,31 @@
+{{define "content"}}
+<div class="owner-container">
+    <h2>Owner Dashboard</h2>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Users</h3>
+            <p class="stat-number">{{.TotalUsers}}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Products</h3>
+            <p class="stat-number">{{.TotalProducts}}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Orders</h3>
+            <p class="stat-number">{{.TotalOrders}}</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Revenue</h3>
+            <p class="stat-number">${{printf "%.2f" .TotalRevenue}}</p>
+        </div>
+    </div>
+    
+    <div class="owner-actions">
+        <a href="/admin" class="btn btn-primary">Admin Panel</a>
+        <a href="/admin/products" class="btn btn-secondary">Manage Products</a>
+        <a href="/admin/orders" class="btn btn-secondary">View Orders</a>
+        <a href="/payments" class="btn btn-danger">View Payments (Educational)</a>
+    </div>
+</div>
+{{end}} 

@@ -1,0 +1,40 @@
+{{define "content"}}
+<div class="admin-container">
+    <div class="admin-header">
+        <h2>Product Management</h2>
+        <a href="/admin/products/add" class="btn btn-primary">Add New Product</a>
+    </div>
+    
+    <div class="products-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{range .Products}}
+                <tr>
+                    <td>{{.ID}}</td>
+                    <td>{{.Name}}</td>
+                    <td>{{.Description}}</td>
+                    <td>${{printf "%.2f" .Price}}</td>
+                    <td>
+                        <a href="/admin/products/edit/{{.ID}}" class="btn btn-secondary">Edit</a>
+                        <form method="POST" action="/admin/products/delete/{{.ID}}" style="display: inline;">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </div>
+    
+    <a href="/admin" class="btn btn-secondary">Back to Dashboard</a>
+</div>
+{{end}} 
