@@ -24,7 +24,7 @@ This organization contains **three progressively vulnerable versions** of the sa
 ---
 
 ## 📦 **Version 1: Basic Vulnerabilities**
-**Repository**: [`vibe-ecommerce`](https://github.com/Vibe-Ecommerce/vibe-ecommerce)  
+**Repository**: [`vibe-ecommerce`](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce)  
 **Port Range**: 8083-9000  
 **Focus**: Fundamental security failures
 
@@ -55,7 +55,7 @@ This organization contains **three progressively vulnerable versions** of the sa
 ---
 
 ## 📦 **Version 2: Advanced Vulnerabilities**
-**Repository**: [`vibe-ecommerce2`](https://github.com/Vibe-Ecommerce/vibe-ecommerce2)  
+**Repository**: [`vibe-ecommerce2`](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce2)  
 **Port Range**: 9001-10000  
 **Focus**: Critical vulnerabilities with RCE capabilities
 
@@ -92,7 +92,7 @@ This organization contains **three progressively vulnerable versions** of the sa
 ---
 
 ## 📦 **Version 3: Maximum Vulnerabilities**
-**Repository**: [`vibe-ecommerce3`](https://github.com/Vibe-Ecommerce/vibe-ecommerce3)  
+**Repository**: [`vibe-ecommerce3`](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce3)  
 **Port Range**: 10001-11000  
 **Focus**: "Insecure by default" design with broken security features
 
@@ -126,14 +126,14 @@ This organization contains **three progressively vulnerable versions** of the sa
 ## 🚀 **Quick Start Guide**
 
 ### 1. **Choose Your Version**
-- **Beginner**: Start with [Version 1](https://github.com/Vibe-Ecommerce/vibe-ecommerce)
-- **Intermediate**: Try [Version 2](https://github.com/Vibe-Ecommerce/vibe-ecommerce2)
-- **Advanced**: Explore [Version 3](https://github.com/Vibe-Ecommerce/vibe-ecommerce3)
+- **Beginner**: Start with [Version 1](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce)
+- **Intermediate**: Try [Version 2](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce2)
+- **Advanced**: Explore [Version 3](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce3)
 
 ### 2. **Installation Steps**
 ```bash
 # Clone the repository
-git clone https://github.com/Vibe-Ecommerce/[repository-name].git
+git clone https://github.com/abhijeth/Vibe-Ecommerce-Org/[repository-name].git
 
 # Navigate to directory
 cd [repository-name]
@@ -361,8 +361,8 @@ This organization and all repositories are for **educational purposes only**. Us
 
 Choose your learning path and start exploring web application security vulnerabilities:
 
-- 🟢 **[Version 1 - Basic](https://github.com/Vibe-Ecommerce/vibe-ecommerce)** - Start here for fundamentals
-- 🟡 **[Version 2 - Advanced](https://github.com/Vibe-Ecommerce/vibe-ecommerce2)** - Challenge yourself with RCE
-- 🔴 **[Version 3 - Maximum](https://github.com/Vibe-Ecommerce/vibe-ecommerce3)** - Master "insecure by default"
+- 🟢 **[Version 1 - Basic](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce)** - Start here for fundamentals
+- 🟡 **[Version 2 - Advanced](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce2)** - Challenge yourself with RCE
+- 🔴 **[Version 3 - Maximum](https://github.com/abhijeth/Vibe-Ecommerce-Org/tree/main/vibe-ecommerce3)** - Master "insecure by default"
 
 **Happy Learning and Stay Secure!** 🛡️
