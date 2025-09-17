@@ -2,6 +2,15 @@
 
 ## 🚨 **CRITICAL SECURITY WARNING**
 
+### 🌐 **Network Security Notice**
+**⚠️ NEVER expose these applications to the public internet or configure localhost DNS resolution!**
+- **Do NOT** set up port forwarding to expose localhost
+- **Do NOT** configure DNS to resolve localhost to public IPs
+- **Do NOT** deploy on public cloud instances without proper isolation
+- **Do NOT** share localhost URLs with external parties
+- **ALWAYS** run in isolated, local environments only
+- **ALWAYS** use only for local testing and education
+
 **⚠️ All applications in this organization are intentionally vulnerable for educational purposes only!**
 
 **DO NOT deploy any of these applications in production environments!**
